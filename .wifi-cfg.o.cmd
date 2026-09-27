@@ -1099,7 +1099,14 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/UNWINDER_ORC) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/module.h \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ieee80211.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/net/cfg80211.h \
+    $(wildcard include/config/OF) \
+    $(wildcard include/config/CFG80211) \
+    $(wildcard include/config/NL80211_TESTMODE) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/CFG80211_WEXT) \
+    $(wildcard include/config/CFG80211_DEBUGFS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ethtool.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/if_ether.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/skbuff.h \
     $(wildcard include/config/NF_CONNTRACK) \
@@ -1252,9 +1259,7 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
     $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
     $(wildcard include/config/DMA_OPS_BYPASS) \
-    $(wildcard include/config/PM) \
     $(wildcard include/config/PM_SLEEP) \
-    $(wildcard include/config/OF) \
     $(wildcard include/config/DEVTMPFS) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/dev_printk.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/energy_model.h \
@@ -1325,7 +1330,166 @@ deps_wifi-cfg.o := \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/dropreason-core.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netmem.h \
     $(wildcard include/config/NET_DEVMEM) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/etherdevice.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/netlink.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/net/scm.h \
+    $(wildcard include/config/UNIX) \
+    $(wildcard include/config/SECURITY_NETWORK) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/net.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/once.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/sockptr.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/net.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/file.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/security.h \
+    $(wildcard include/config/SECURITY_PATH) \
+    $(wildcard include/config/SECURITY_INFINIBAND) \
+    $(wildcard include/config/SECURITY_NETWORK_XFRM) \
+    $(wildcard include/config/SECURITYFS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kernel_read_file.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf.h \
+    $(wildcard include/config/CGROUP_BPF) \
+    $(wildcard include/config/DEBUG_KERNEL) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_JMP) \
+    $(wildcard include/config/FINEIBT) \
+    $(wildcard include/config/BPF_LSM) \
+    $(wildcard include/config/BPF_JIT_ALWAYS_ON) \
+    $(wildcard include/config/INET) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/bpf.h \
+    $(wildcard include/config/BPF_LIRC_MODE2) \
+    $(wildcard include/config/EFFICIENT_UNALIGNED_ACCESS) \
+    $(wildcard include/config/CGROUP_NET_CLASSID) \
+    $(wildcard include/config/IP_ROUTE_CLASSID) \
+    $(wildcard include/config/BPF_KPROBE_OVERRIDE) \
+    $(wildcard include/config/SOCK_CGROUP_DATA) \
+    $(wildcard include/config/IPV6) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/bpf_common.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/filter.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/crypto/sha2.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kallsyms.h \
+    $(wildcard include/config/KALLSYMS_ALL) \
+    $(wildcard include/config/HAVE_FUNCTION_DESCRIPTORS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/sections.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/sections.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpfptr.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/btf.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bsearch.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/btf_ids.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/btf.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/rcupdate_trace.h \
+    $(wildcard include/config/TASKS_TRACE_RCU_NO_MB) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/static_call.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cpu.h \
+    $(wildcard include/config/GENERIC_CPU_DEVICES) \
+    $(wildcard include/config/PM_SLEEP_SMP) \
+    $(wildcard include/config/PM_SLEEP_SMP_NONZERO_CPU) \
+    $(wildcard include/config/ARCH_HAS_CPU_FINALIZE_INIT) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/node.h \
+    $(wildcard include/config/HMEM_REPORTING) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cpuhotplug.h \
+    $(wildcard include/config/HOTPLUG_CORE_SYNC_DEAD) \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/static_call.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/text-patching.h \
+    $(wildcard include/config/UML_X86) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/memcontrol.h \
+    $(wildcard include/config/MEMCG_NMI_SAFETY_REQUIRES_ATOMIC) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup.h \
+    $(wildcard include/config/DEBUG_CGROUP_REF) \
+    $(wildcard include/config/CGROUP_CPUACCT) \
+    $(wildcard include/config/CGROUP_DATA) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/cgroupstats.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/taskstats.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/seq_file.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/string_helpers.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ctype.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/string_choices.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns_common.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns/ns_common_types.h \
+    $(wildcard include/config/IPC_NS) \
+    $(wildcard include/config/NET_NS) \
+    $(wildcard include/config/PID_NS) \
+    $(wildcard include/config/TIME_NS) \
+    $(wildcard include/config/UTS_NS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns/nstree_types.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/nsfs.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/nsproxy.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/user_namespace.h \
+    $(wildcard include/config/INOTIFY_USER) \
+    $(wildcard include/config/FANOTIFY) \
+    $(wildcard include/config/BINFMT_MISC) \
+    $(wildcard include/config/PERSISTENT_KEYRINGS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/rculist_nulls.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kernel_stat.h \
+    $(wildcard include/config/GENERIC_IRQ_STAT_SNAPSHOT) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/irqreturn.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/irq.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/irq_vectors.h \
+    $(wildcard include/config/PCI_MSI) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup-defs.h \
+    $(wildcard include/config/EXT_SUB_SCHED) \
+    $(wildcard include/config/CGROUP_NET_PRIO) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/u64_stats_sync.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/generated/asm/local64.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/local64.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/local.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf-cgroup-defs.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/psi_types.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kthread.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_subsys.h \
+    $(wildcard include/config/CGROUP_DEVICE) \
+    $(wildcard include/config/CGROUP_FREEZER) \
+    $(wildcard include/config/CGROUP_PERF) \
+    $(wildcard include/config/CGROUP_HUGETLB) \
+    $(wildcard include/config/CGROUP_PIDS) \
+    $(wildcard include/config/CGROUP_RDMA) \
+    $(wildcard include/config/CGROUP_MISC) \
+    $(wildcard include/config/CGROUP_DMEM) \
+    $(wildcard include/config/CGROUP_DEBUG) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_namespace.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_refcnt.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/page_counter.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/vmpressure.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/eventfd.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/eventfd.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/writeback.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/flex_proportions.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/backing-dev-defs.h \
+    $(wildcard include/config/DEBUG_FS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/blk_types.h \
+    $(wildcard include/config/FAIL_MAKE_REQUEST) \
+    $(wildcard include/config/BLK_CGROUP_IOCOST) \
+    $(wildcard include/config/BLK_INLINE_ENCRYPTION) \
+    $(wildcard include/config/BLK_DEV_INTEGRITY) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/folio_batch.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bio.h \
+    $(wildcard include/config/BLK_DEV_ZONED) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/mempool.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cfi.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/cfi.h \
+    $(wildcard include/config/FINEIBT_BHI) \
+    $(wildcard include/config/FUNCTION_PADDING_CFI) \
+  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/rqspinlock.h \
+    $(wildcard include/config/QUEUED_SPINLOCKS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/rqspinlock.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf_types.h \
+    $(wildcard include/config/NETFILTER_BPF_LINK) \
+    $(wildcard include/config/XDP_SOCKETS) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/lsm.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/selinux.h \
+    $(wildcard include/config/SECURITY_SELINUX) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/smack.h \
+    $(wildcard include/config/SECURITY_SMACK) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/apparmor.h \
+    $(wildcard include/config/SECURITY_APPARMOR) \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/bpf.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/net/compat.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/netlink.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/ethtool.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/typelimits.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/ethtool_netlink_generated.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/net_tstamp.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/rfkill.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/netdevice.h \
     $(wildcard include/config/DCB) \
     $(wildcard include/config/HYPERV_NET) \
@@ -1336,7 +1500,6 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/IPV6_SIT) \
     $(wildcard include/config/IPV6_TUNNEL) \
     $(wildcard include/config/NETPOLL) \
-    $(wildcard include/config/XDP_SOCKETS) \
     $(wildcard include/config/BQL) \
     $(wildcard include/config/RFS_ACCEL) \
     $(wildcard include/config/FCOE) \
@@ -1347,13 +1510,11 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/NETFILTER_EGRESS) \
     $(wildcard include/config/WIRELESS_EXT) \
     $(wildcard include/config/NET_L3_MASTER_DEV) \
-    $(wildcard include/config/IPV6) \
     $(wildcard include/config/TLS_DEVICE) \
     $(wildcard include/config/VLAN_8021Q) \
     $(wildcard include/config/NET_DSA) \
     $(wildcard include/config/TIPC) \
     $(wildcard include/config/ATALK) \
-    $(wildcard include/config/CFG80211) \
     $(wildcard include/config/IEEE802154) \
     $(wildcard include/config/6LOWPAN) \
     $(wildcard include/config/MPLS_ROUTING) \
@@ -1363,7 +1524,6 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/GARP) \
     $(wildcard include/config/MRP) \
     $(wildcard include/config/NET_DROP_MONITOR) \
-    $(wildcard include/config/CGROUP_NET_PRIO) \
     $(wildcard include/config/MACSEC) \
     $(wildcard include/config/DPLL) \
     $(wildcard include/config/DIMLIB) \
@@ -1375,11 +1535,9 @@ deps_wifi-cfg.o := \
   /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/delay.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/delay.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/prefetch.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/local.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/dynamic_queue_limits.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/net_namespace.h \
     $(wildcard include/config/NF_FLOW_TABLE) \
-    $(wildcard include/config/UNIX) \
     $(wildcard include/config/IEEE802154_6LOWPAN) \
     $(wildcard include/config/NETFILTER) \
     $(wildcard include/config/WEXT_CORE) \
@@ -1388,7 +1546,6 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/SMC) \
     $(wildcard include/config/DEBUG_NET_SMALL_RTNL) \
     $(wildcard include/config/VSOCKETS) \
-    $(wildcard include/config/NET_NS) \
     $(wildcard include/config/NET_NS_REFCNT_TRACKER) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netns/core.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netns/mib.h \
@@ -1396,16 +1553,12 @@ deps_wifi-cfg.o := \
     $(wildcard include/config/TLS) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/snmp.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/snmp.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/u64_stats_sync.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/generated/asm/local64.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/local64.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netns/unix.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netns/packet.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netns/ipv4.h \
     $(wildcard include/config/IP_ROUTE_MULTIPATH) \
     $(wildcard include/config/NET_UDP_TUNNEL) \
     $(wildcard include/config/IP_MULTIPLE_TABLES) \
-    $(wildcard include/config/IP_ROUTE_CLASSID) \
     $(wildcard include/config/IP_MROUTE) \
     $(wildcard include/config/IP_MROUTE_MULTIPLE_TABLES) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/inet_frag.h \
@@ -1455,166 +1608,25 @@ deps_wifi-cfg.o := \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/net_trackers.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ref_tracker.h \
     $(wildcard include/config/REF_TRACKER) \
-    $(wildcard include/config/DEBUG_FS) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/stackdepot.h \
     $(wildcard include/config/STACKDEPOT) \
     $(wildcard include/config/STACKDEPOT_MAX_FRAMES) \
     $(wildcard include/config/STACKDEPOT_ALWAYS_INIT) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns_common.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns/ns_common_types.h \
-    $(wildcard include/config/IPC_NS) \
-    $(wildcard include/config/PID_NS) \
-    $(wildcard include/config/TIME_NS) \
-    $(wildcard include/config/UTS_NS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ns/nstree_types.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/nsfs.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/seq_file_net.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/seq_file.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/string_helpers.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ctype.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/string_choices.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/dcbnl.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/dcbnl.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/netprio_cgroup.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup.h \
-    $(wildcard include/config/DEBUG_CGROUP_REF) \
-    $(wildcard include/config/CGROUP_CPUACCT) \
-    $(wildcard include/config/SOCK_CGROUP_DATA) \
-    $(wildcard include/config/CGROUP_DATA) \
-    $(wildcard include/config/CGROUP_BPF) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/cgroupstats.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/taskstats.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/nsproxy.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/user_namespace.h \
-    $(wildcard include/config/INOTIFY_USER) \
-    $(wildcard include/config/FANOTIFY) \
-    $(wildcard include/config/BINFMT_MISC) \
-    $(wildcard include/config/PERSISTENT_KEYRINGS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/rculist_nulls.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kernel_stat.h \
-    $(wildcard include/config/GENERIC_IRQ_STAT_SNAPSHOT) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/interrupt.h \
-    $(wildcard include/config/IRQ_FORCED_THREADING) \
-    $(wildcard include/config/GENERIC_IRQ_PROBE) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/irqreturn.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/irq.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/irq_vectors.h \
-    $(wildcard include/config/PCI_MSI) \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/sections.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/sections.h \
-    $(wildcard include/config/HAVE_FUNCTION_DESCRIPTORS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup-defs.h \
-    $(wildcard include/config/EXT_SUB_SCHED) \
-    $(wildcard include/config/CGROUP_NET_CLASSID) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf-cgroup-defs.h \
-    $(wildcard include/config/BPF_LSM) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/psi_types.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kthread.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_subsys.h \
-    $(wildcard include/config/CGROUP_DEVICE) \
-    $(wildcard include/config/CGROUP_FREEZER) \
-    $(wildcard include/config/CGROUP_PERF) \
-    $(wildcard include/config/CGROUP_HUGETLB) \
-    $(wildcard include/config/CGROUP_PIDS) \
-    $(wildcard include/config/CGROUP_RDMA) \
-    $(wildcard include/config/CGROUP_MISC) \
-    $(wildcard include/config/CGROUP_DMEM) \
-    $(wildcard include/config/CGROUP_DEBUG) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_namespace.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cgroup_refcnt.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/neighbour.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/netlink.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/net/scm.h \
-    $(wildcard include/config/SECURITY_NETWORK) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/net.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/once.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/sockptr.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/net.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/file.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/security.h \
-    $(wildcard include/config/SECURITY_PATH) \
-    $(wildcard include/config/SECURITY_INFINIBAND) \
-    $(wildcard include/config/SECURITY_NETWORK_XFRM) \
-    $(wildcard include/config/SECURITYFS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kernel_read_file.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf.h \
-    $(wildcard include/config/DEBUG_KERNEL) \
-    $(wildcard include/config/DYNAMIC_FTRACE_WITH_JMP) \
-    $(wildcard include/config/FINEIBT) \
-    $(wildcard include/config/BPF_JIT_ALWAYS_ON) \
-    $(wildcard include/config/INET) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/bpf.h \
-    $(wildcard include/config/BPF_LIRC_MODE2) \
-    $(wildcard include/config/EFFICIENT_UNALIGNED_ACCESS) \
-    $(wildcard include/config/BPF_KPROBE_OVERRIDE) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/bpf_common.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/filter.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/crypto/sha2.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/kallsyms.h \
-    $(wildcard include/config/KALLSYMS_ALL) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpfptr.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/btf.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bsearch.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/btf_ids.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/btf.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/rcupdate_trace.h \
-    $(wildcard include/config/TASKS_TRACE_RCU_NO_MB) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/static_call.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cpu.h \
-    $(wildcard include/config/GENERIC_CPU_DEVICES) \
-    $(wildcard include/config/PM_SLEEP_SMP) \
-    $(wildcard include/config/PM_SLEEP_SMP_NONZERO_CPU) \
-    $(wildcard include/config/ARCH_HAS_CPU_FINALIZE_INIT) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/node.h \
-    $(wildcard include/config/HMEM_REPORTING) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cpuhotplug.h \
-    $(wildcard include/config/HOTPLUG_CORE_SYNC_DEAD) \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/static_call.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/text-patching.h \
-    $(wildcard include/config/UML_X86) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/memcontrol.h \
-    $(wildcard include/config/MEMCG_NMI_SAFETY_REQUIRES_ATOMIC) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/page_counter.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/vmpressure.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/eventfd.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/eventfd.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/writeback.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/flex_proportions.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/backing-dev-defs.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/blk_types.h \
-    $(wildcard include/config/FAIL_MAKE_REQUEST) \
-    $(wildcard include/config/BLK_CGROUP_IOCOST) \
-    $(wildcard include/config/BLK_INLINE_ENCRYPTION) \
-    $(wildcard include/config/BLK_DEV_INTEGRITY) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/folio_batch.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bio.h \
-    $(wildcard include/config/BLK_DEV_ZONED) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/mempool.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/cfi.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/cfi.h \
-    $(wildcard include/config/FINEIBT_BHI) \
-    $(wildcard include/config/FUNCTION_PADDING_CFI) \
-  /usr/lib/modules/7.1.8-arch1-3/build/arch/x86/include/asm/rqspinlock.h \
-    $(wildcard include/config/QUEUED_SPINLOCKS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/asm-generic/rqspinlock.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bpf_types.h \
-    $(wildcard include/config/NETFILTER_BPF_LINK) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/lsm.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/selinux.h \
-    $(wildcard include/config/SECURITY_SELINUX) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/smack.h \
-    $(wildcard include/config/SECURITY_SMACK) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/apparmor.h \
-    $(wildcard include/config/SECURITY_APPARMOR) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/lsm/bpf.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/net/compat.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/netlink.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/netdevice.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/if_link.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/if_link.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/if_bonding.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/netdev.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/net/neighbour_tables.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/debugfs.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/nl80211.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ieee80211.h \
+  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/etherdevice.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/crc32.h \
     $(wildcard include/config/CRC32_ARCH) \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/bitrev.h \
@@ -1632,18 +1644,6 @@ deps_wifi-cfg.o := \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ieee80211-s1g.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ieee80211-p2p.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ieee80211-nan.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/net/cfg80211.h \
-    $(wildcard include/config/NL80211_TESTMODE) \
-    $(wildcard include/config/CFG80211_WEXT) \
-    $(wildcard include/config/CFG80211_DEBUGFS) \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/ethtool.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/ethtool.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/typelimits.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/ethtool_netlink_generated.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/net_tstamp.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/rfkill.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/linux/debugfs.h \
-  /usr/lib/modules/7.1.8-arch1-3/build/include/uapi/linux/nl80211.h \
   /usr/lib/modules/7.1.8-arch1-3/build/include/linux/rfkill.h \
     $(wildcard include/config/RFKILL) \
     $(wildcard include/config/RFKILL_LEDS) \

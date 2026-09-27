@@ -18,4 +18,4 @@ __section(".gnu.linkonce.this_module") = {
 MODULE_INFO(depends, "cfg80211");
 
 
-MODULE_INFO(srcversion, "B481B932F10D241DF302B7D");
+MODULE_INFO(srcversion, "27FB8EBDF1C14F449282DBF");
