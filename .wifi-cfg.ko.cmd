@@ -1,0 +1,1 @@
+savedcmd_wifi-cfg.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/lib/modules/7.1.8-arch1-3/build/scripts/module.lds -o wifi-cfg.ko wifi-cfg.o wifi-cfg.mod.o .module-common.o
